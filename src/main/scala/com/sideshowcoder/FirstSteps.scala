@@ -54,4 +54,6 @@ object FirstSteps {
   object alien {
     def greet(p: person.type): String = "Greetings " + p.firstName
   }
+
+
 }
