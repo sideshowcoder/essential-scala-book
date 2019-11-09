@@ -41,16 +41,6 @@ object ChipShop {
     }
 }
 
-class Director(val yearOfBirth: Int)
-
-class Film(val yearOfRelease: Int, val director: Director) {
-  def directorAge =
-    yearOfRelease - director.yearOfBirth
-
-  def copy(yOR: Int = yearOfRelease, d: Director = director) =
-    new Film(yOR, d)
-}
-
 case class Adder(x: Int) {
   def apply(y: Int) =
     y + x
